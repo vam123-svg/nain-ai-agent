@@ -27,13 +27,19 @@
       padding: 2rem;
       width: 100%;
       max-width: 800px;
+      text-align: center;
     }
-    iframe {
-      width: 100%;
-      height: 600px;
+    .agent-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
       border: none;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .agent-button:hover {
+      background-color: #45a049;
     }
     footer {
       margin-top: 2rem;
@@ -50,7 +56,10 @@
   </header>
 
   <div class="container">
-    <iframe src="https://studio.d-id.com/agents/share?id=v2_agt_P-KaTNYM" allowfullscreen></iframe>
+    <p>Click the button below to launch your AI Agent:</p>
+    <a href="https://studio.d-id.com/agents/share?id=v2_agt_P-KaTNYM" target="_blank">
+      <button class="agent-button">🎙️ Open AI Agent</button>
+    </a>
   </div>
 
   <footer>
